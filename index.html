@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Survey Form</h1>
+        <p>User stories survey form</p>
+    </div>   
+    <div class="details">
+        <div class="box">
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter Name" id="Name">
+        </div>
+        <div class="box">
+            <label for="E-mail">E-mail</label>
+            <input type="text" placeholder="Enter E-Mail" id="E-mail">
+        </div>
+        <div class="box">
+            <label for="Work-Experience">Work-Experience</label>
+            <input type="text" placeholder="Enter Number" id="Work-Experience">
+        </div>
+        <div class="box">
+            <label for="concent">Are you confortable in investing in real estate on platform without first incestigating properly</label>
+        <select name="concent" id="concent">
+            <option value="Yes"><b>Yes</b></option>
+            <option value="No"><b>NO</b></option>
+        </select>
+        </div>
+        <div class="box">
+            <label for="suggestions">Suggestions to bulid trusted platform</label>
+            <textarea name="suggestions" id="suggestions" placeholder="Type suggestions"></textarea>
+        </div>
+        <div class="box">
+            <label>You are ready to invest in:</label>
+            <div class="innerBox">
+                <input type="checkbox" id="real_estate" >
+                <label for="real_estate" class="checkbox">Real Estate</label><br>
+                <input type="checkbox" id="Mutual_fund">
+                <label for="Mutual_fund" class="checkbox">Mutual Fund</label><br>
+                <input type="checkbox" id="Crypto">
+                <label for="Crypto" class="checkbox">Crypto Currency</label><br>
+                <input type="checkbox" id="Stock">
+                <label for="Stock" class="checkbox">Stock & Bonds</label>
+            </div>
+        </div>
+        <div class="box radio">
+            <label>Are you ready for further contact</label>
+            <input type="radio" name="Qs" id="Yes" >
+            <label for="Yes" class="inner_label">Yes</label><br>
+            <input type="radio" name="Qs" id="No">
+            <label for="No" class="inner_label">No</label>
+        </div>
+        <button class="submit">Submit</button>
+
+    </div>
+</body>
+</html>
