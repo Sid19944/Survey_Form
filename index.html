@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="heading">
-        <h1>Survey Form</h1>
-        <p>User stories survey form</p>
-    </div>   
-    <div class="details">
-        <div class="box">
-            <label for="Name">Name</label>
-            <input type="text" placeholder="Enter Name" id="Name">
+    <form action="">
+        <div class="top">
+            <h1>Survey Form</h1>
+            <p>User stories survey form</p>
         </div>
-        <div class="box">
-            <label for="E-mail">E-mail</label>
-            <input type="text" placeholder="Enter E-Mail" id="E-mail">
-        </div>
-        <div class="box">
-            <label for="Work-Experience">Work-Experience</label>
-            <input type="text" placeholder="Enter Number" id="Work-Experience">
-        </div>
-        <div class="box">
-            <label for="concent">Are you confortable in investing in real estate on platform without first incestigating properly</label>
-        <select name="concent" id="concent">
-            <option value="Yes"><b>Yes</b></option>
-            <option value="No"><b>NO</b></option>
-        </select>
-        </div>
-        <div class="box">
-            <label for="suggestions">Suggestions to bulid trusted platform</label>
-            <textarea name="suggestions" id="suggestions" placeholder="Type suggestions"></textarea>
-        </div>
-        <div class="box">
-            <label>You are ready to invest in:</label>
-            <div class="innerBox">
-                <input type="checkbox" id="real_estate" >
-                <label for="real_estate" class="checkbox">Real Estate</label><br>
-                <input type="checkbox" id="Mutual_fund">
-                <label for="Mutual_fund" class="checkbox">Mutual Fund</label><br>
-                <input type="checkbox" id="Crypto">
-                <label for="Crypto" class="checkbox">Crypto Currency</label><br>
-                <input type="checkbox" id="Stock">
-                <label for="Stock" class="checkbox">Stock & Bonds</label>
+        <div class="main">
+            <div class="box">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name"><br>
             </div>
+            <div class="box">
+                <label for="e_mail">E-mail</label>
+                <input type="text" id="e_mail" placeholder="Enter E-mail"><br>
+            </div>
+            <div class="box">
+                <label for="Exp">Work Experience</label>
+                <input type="text" id="Exp" placeholder="Enter Number">
+            </div>
+            <div class="box">
+                <label for="concent">Are you comfortable in investing in real estate onplatform without first investigating properly</label>
+                <select name="concent" id="concent">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="suggestions">Suggestions to build trusted platform</label>
+                <textarea name="suggestions" id="suggestions" placeholder="Type here"></textarea>
+            </div>
+            <div class="box">
+                <label class="ready_l">You are ready to invest in</label>
+                <div class="ready">
+                    <input type="checkbox" name="check" id="r_estate" class="check">
+                    <label for="r_estate" class="check">Real Estate</label><br>
+                    <input type="checkbox" name="chcek" id="m_fund" class="check">
+                    <label for="m_fund" class="check">Mutual Fund</label><br>
+                    <input type="checkbox" name="check" id="c_currency" class="check">
+                    <label for="c_currency" class="check">Crypto Currency</label><br>
+                    <input type="checkbox" name="check" id="s_b" class="check">
+                    <label for="s_b" class="check">Stocks & Bonds</label>
+                </div>
+            </div>          
+            <div class="box">
+                <label for="contact">Are you ready for further contact</label>
+                <div class="ready">
+                    <input type="radio" name="contact" id="yes" class="check contact">
+                    <label for="yes" class="check contact">Yes</label>
+                    <input type="radio" name="contact" id="no" class="check contact">
+                    <label for="no" class="check contact">No</label>
+                </div>               
+            </div>            
         </div>
-        <div class="box radio">
-            <label>Are you ready for further contact</label>
-            <input type="radio" name="Qs" id="Yes" >
-            <label for="Yes" class="inner_label">Yes</label><br>
-            <input type="radio" name="Qs" id="No">
-            <label for="No" class="inner_label">No</label>
-        </div>
-        <button class="submit">Submit</button>
-
-    </div>
+        <div class="footer">
+            <button class="submit">Submit</button>
+        </div>       
+    </form>
 </body>
 </html>

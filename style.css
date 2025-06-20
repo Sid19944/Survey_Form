@@ -1,31 +1,58 @@
-.details {
+body {
+    display: flex;
+    justify-content: center;
+}
+.top {
     text-align: center;
 }
-.box {
-    padding: 10px;
-    display: flex;
-}
-.details label {
+form {
+    width: 100vh;
+    border: 2px solid black;
     display: inline-block;
-    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff2e0;
+}
+label {
+    width: 45%;
+    display: inline-block;
     text-align: end;
     padding: 10px 10px;
 }
+input {
+    width: 30%;
+    border-radius: 10px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.check {
+    width: fit-content;
+    padding: 0;
+}
+.box {
+    display: flex;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(112, 111, 111);
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #c0c9ee;
+}
+.ready {
+    display: inline-block;
+    padding: 0;
+}
 select {
-    width: 180px;
-    height: 35px;
-    padding: 4px 1px;
+    width: 31%;
+    border-radius: 10px;
 }
-.box .checkbox {
-    width: fit-content;
-    padding: 0;
+.contact {
+    padding: 10px 10px 10px 0;
 }
-.innerBox {
-    padding: 0;
-    text-align: start;
-}
-.radio .inner_label{
-    width: fit-content;
+.footer {
+    text-align: center;
+    padding: 10px;
 }
 button {
     width: 200px;
@@ -44,6 +71,9 @@ input:hover{
     box-shadow: 5px 5px 20px black;
     border-radius: 15px;
 }
-.heading {
-    text-align: center;
+form:hover {
+    box-shadow: 2px 2px 10px black;
+}
+.box:hover {
+    box-shadow: 2px 2px 10px black;
 }
